@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45BA0D80E4BA7381E61BBEB4 /* Pods_PianoCollection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C7C4A05E9BB009BDFB28E9A /* Pods_PianoCollection.framework */; };
+		70419845F685AADD4BF14BB0 /* Pods_PianoCollectionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75859AECE25EB837E9F81354 /* Pods_PianoCollectionTests.framework */; };
+		90DFE922C4058903179D469C /* Pods_PianoCollectionUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F98C716FA75D27C77B7E5B6A /* Pods_PianoCollectionUITests.framework */; };
 		C08C56981E4F55B7000A539C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08C56971E4F55B7000A539C /* AppDelegate.swift */; };
 		C08C569A1E4F55B7000A539C /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08C56991E4F55B7000A539C /* FirstViewController.swift */; };
 		C08C569C1E4F55B7000A539C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08C569B1E4F55B7000A539C /* SecondViewController.swift */; };
@@ -19,6 +22,19 @@
 		C08C56CA1E4F589E000A539C /* piano_detail.plist in Resources */ = {isa = PBXBuildFile; fileRef = C08C56C91E4F589E000A539C /* piano_detail.plist */; };
 		C08C56CC1E4F58B5000A539C /* Internet Widgits Pty Ltd.cer in Resources */ = {isa = PBXBuildFile; fileRef = C08C56CB1E4F58B5000A539C /* Internet Widgits Pty Ltd.cer */; };
 		C08C56CE1E4F58C4000A539C /* AlexPianoDataBase.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = C08C56CD1E4F58C4000A539C /* AlexPianoDataBase.sqlite */; };
+		C0C5A4761E54ACB0007062B1 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C5A46C1E54ACB0007062B1 /* FMDatabase.m */; };
+		C0C5A4771E54ACB0007062B1 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C5A46C1E54ACB0007062B1 /* FMDatabase.m */; };
+		C0C5A4781E54ACB0007062B1 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C5A46E1E54ACB0007062B1 /* FMDatabaseAdditions.m */; };
+		C0C5A4791E54ACB0007062B1 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C5A46E1E54ACB0007062B1 /* FMDatabaseAdditions.m */; };
+		C0C5A47A1E54ACB0007062B1 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C5A4701E54ACB0007062B1 /* FMDatabasePool.m */; };
+		C0C5A47B1E54ACB0007062B1 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C5A4701E54ACB0007062B1 /* FMDatabasePool.m */; };
+		C0C5A47C1E54ACB0007062B1 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C5A4721E54ACB0007062B1 /* FMDatabaseQueue.m */; };
+		C0C5A47D1E54ACB0007062B1 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C5A4721E54ACB0007062B1 /* FMDatabaseQueue.m */; };
+		C0C5A47E1E54ACB0007062B1 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C5A4751E54ACB0007062B1 /* FMResultSet.m */; };
+		C0C5A47F1E54ACB0007062B1 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C5A4751E54ACB0007062B1 /* FMResultSet.m */; };
+		C0C5A4811E54B273007062B1 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C5A4801E54B273007062B1 /* DBManager.swift */; };
+		C0C5A4821E54B273007062B1 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C5A4801E54B273007062B1 /* DBManager.swift */; };
+		C0C5A4841E54B35E007062B1 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C0C5A4831E54B35E007062B1 /* libsqlite3.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +55,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D89031ABDCCE3E0A2B5DCCB /* Pods-PianoCollection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PianoCollection.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PianoCollection/Pods-PianoCollection.debug.xcconfig"; sourceTree = "<group>"; };
+		38A9F043D0BA054294DB9DD4 /* Pods-PianoCollectionUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PianoCollectionUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PianoCollectionUITests/Pods-PianoCollectionUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		49D7940C293A7A0623F6D909 /* Pods-PianoCollection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PianoCollection.release.xcconfig"; path = "Pods/Target Support Files/Pods-PianoCollection/Pods-PianoCollection.release.xcconfig"; sourceTree = "<group>"; };
+		4B895F0A35D50CA7F4340911 /* Pods-PianoCollectionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PianoCollectionTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PianoCollectionTests/Pods-PianoCollectionTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5C7C4A05E9BB009BDFB28E9A /* Pods_PianoCollection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PianoCollection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		75859AECE25EB837E9F81354 /* Pods_PianoCollectionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PianoCollectionTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AD3ABC9F79C87FC8DF211AC /* Pods-PianoCollectionUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PianoCollectionUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PianoCollectionUITests/Pods-PianoCollectionUITests.release.xcconfig"; sourceTree = "<group>"; };
+		92D8AAA54A4B836779231DB2 /* Pods-PianoCollectionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PianoCollectionTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PianoCollectionTests/Pods-PianoCollectionTests.release.xcconfig"; sourceTree = "<group>"; };
 		C08C56941E4F55B7000A539C /* PianoCollection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PianoCollection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C08C56971E4F55B7000A539C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C08C56991E4F55B7000A539C /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +82,22 @@
 		C08C56CB1E4F58B5000A539C /* Internet Widgits Pty Ltd.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Internet Widgits Pty Ltd.cer"; sourceTree = "<group>"; };
 		C08C56CD1E4F58C4000A539C /* AlexPianoDataBase.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = AlexPianoDataBase.sqlite; sourceTree = "<group>"; };
 		C08C56CF1E4F5EB8000A539C /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		C0C5A4691E54ACB0007062B1 /* PianoCollection-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PianoCollection-Bridging-Header.h"; sourceTree = "<group>"; };
+		C0C5A46A1E54ACB0007062B1 /* PianoCollectionTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PianoCollectionTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		C0C5A46B1E54ACB0007062B1 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		C0C5A46C1E54ACB0007062B1 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		C0C5A46D1E54ACB0007062B1 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		C0C5A46E1E54ACB0007062B1 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		C0C5A46F1E54ACB0007062B1 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		C0C5A4701E54ACB0007062B1 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		C0C5A4711E54ACB0007062B1 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		C0C5A4721E54ACB0007062B1 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		C0C5A4731E54ACB0007062B1 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		C0C5A4741E54ACB0007062B1 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		C0C5A4751E54ACB0007062B1 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		C0C5A4801E54B273007062B1 /* DBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
+		C0C5A4831E54B35E007062B1 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		F98C716FA75D27C77B7E5B6A /* Pods_PianoCollectionUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PianoCollectionUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +105,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0C5A4841E54B35E007062B1 /* libsqlite3.tbd in Frameworks */,
+				45BA0D80E4BA7381E61BBEB4 /* Pods_PianoCollection.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70419845F685AADD4BF14BB0 /* Pods_PianoCollectionTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,12 +122,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90DFE922C4058903179D469C /* Pods_PianoCollectionUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6AA9EFE5D769615E83EB8F87 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0C5A4831E54B35E007062B1 /* libsqlite3.tbd */,
+				5C7C4A05E9BB009BDFB28E9A /* Pods_PianoCollection.framework */,
+				75859AECE25EB837E9F81354 /* Pods_PianoCollectionTests.framework */,
+				F98C716FA75D27C77B7E5B6A /* Pods_PianoCollectionUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C08C568B1E4F55B7000A539C = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +147,8 @@
 				C08C56AD1E4F55B7000A539C /* PianoCollectionTests */,
 				C08C56B81E4F55B7000A539C /* PianoCollectionUITests */,
 				C08C56951E4F55B7000A539C /* Products */,
+				E71D452956A0666B926EC0AF /* Pods */,
+				6AA9EFE5D769615E83EB8F87 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,9 +165,11 @@
 		C08C56961E4F55B7000A539C /* PianoCollection */ = {
 			isa = PBXGroup;
 			children = (
+				C0C5A4531E54AC29007062B1 /* FMDB */,
 				C08C56971E4F55B7000A539C /* AppDelegate.swift */,
 				C08C56991E4F55B7000A539C /* FirstViewController.swift */,
 				C08C569B1E4F55B7000A539C /* SecondViewController.swift */,
+				C0C5A4801E54B273007062B1 /* DBManager.swift */,
 				C08C569D1E4F55B7000A539C /* Main.storyboard */,
 				C08C56A01E4F55B7000A539C /* Assets.xcassets */,
 				C08C56A21E4F55B7000A539C /* LaunchScreen.storyboard */,
@@ -142,6 +201,39 @@
 			path = PianoCollectionUITests;
 			sourceTree = "<group>";
 		};
+		C0C5A4531E54AC29007062B1 /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				C0C5A46B1E54ACB0007062B1 /* FMDatabase.h */,
+				C0C5A46C1E54ACB0007062B1 /* FMDatabase.m */,
+				C0C5A46D1E54ACB0007062B1 /* FMDatabaseAdditions.h */,
+				C0C5A46E1E54ACB0007062B1 /* FMDatabaseAdditions.m */,
+				C0C5A46F1E54ACB0007062B1 /* FMDatabasePool.h */,
+				C0C5A4701E54ACB0007062B1 /* FMDatabasePool.m */,
+				C0C5A4711E54ACB0007062B1 /* FMDatabaseQueue.h */,
+				C0C5A4721E54ACB0007062B1 /* FMDatabaseQueue.m */,
+				C0C5A4731E54ACB0007062B1 /* FMDB.h */,
+				C0C5A4741E54ACB0007062B1 /* FMResultSet.h */,
+				C0C5A4751E54ACB0007062B1 /* FMResultSet.m */,
+				C0C5A4691E54ACB0007062B1 /* PianoCollection-Bridging-Header.h */,
+				C0C5A46A1E54ACB0007062B1 /* PianoCollectionTests-Bridging-Header.h */,
+			);
+			path = FMDB;
+			sourceTree = "<group>";
+		};
+		E71D452956A0666B926EC0AF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0D89031ABDCCE3E0A2B5DCCB /* Pods-PianoCollection.debug.xcconfig */,
+				49D7940C293A7A0623F6D909 /* Pods-PianoCollection.release.xcconfig */,
+				4B895F0A35D50CA7F4340911 /* Pods-PianoCollectionTests.debug.xcconfig */,
+				92D8AAA54A4B836779231DB2 /* Pods-PianoCollectionTests.release.xcconfig */,
+				38A9F043D0BA054294DB9DD4 /* Pods-PianoCollectionUITests.debug.xcconfig */,
+				8AD3ABC9F79C87FC8DF211AC /* Pods-PianoCollectionUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -149,9 +241,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C08C56BE1E4F55B7000A539C /* Build configuration list for PBXNativeTarget "PianoCollection" */;
 			buildPhases = (
+				0AFBBA12774CE0B14947356A /* [CP] Check Pods Manifest.lock */,
 				C08C56901E4F55B7000A539C /* Sources */,
 				C08C56911E4F55B7000A539C /* Frameworks */,
 				C08C56921E4F55B7000A539C /* Resources */,
+				C1D1612E381451972E09183B /* [CP] Embed Pods Frameworks */,
+				035649117765E899A662B306 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -166,9 +261,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C08C56C11E4F55B7000A539C /* Build configuration list for PBXNativeTarget "PianoCollectionTests" */;
 			buildPhases = (
+				5E5BCFEBE26E5E23A487DA23 /* [CP] Check Pods Manifest.lock */,
 				C08C56A61E4F55B7000A539C /* Sources */,
 				C08C56A71E4F55B7000A539C /* Frameworks */,
 				C08C56A81E4F55B7000A539C /* Resources */,
+				D5DB13BCD713B339E116CD97 /* [CP] Embed Pods Frameworks */,
+				F105D6D4860382CE65A4C3A6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -184,9 +282,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C08C56C41E4F55B7000A539C /* Build configuration list for PBXNativeTarget "PianoCollectionUITests" */;
 			buildPhases = (
+				70376F342AE7CFFCBB4ECC36 /* [CP] Check Pods Manifest.lock */,
 				C08C56B11E4F55B7000A539C /* Sources */,
 				C08C56B21E4F55B7000A539C /* Frameworks */,
 				C08C56B31E4F55B7000A539C /* Resources */,
+				02D1C9F4EA455FC006DA23B2 /* [CP] Embed Pods Frameworks */,
+				1E11E69ED81C62AD8FBD8B67 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -211,11 +312,13 @@
 					C08C56931E4F55B7000A539C = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = X77M95VSB8;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					C08C56A91E4F55B7000A539C = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = X77M95VSB8;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 						TestTargetID = C08C56931E4F55B7000A539C;
 					};
@@ -278,14 +381,158 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		02D1C9F4EA455FC006DA23B2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PianoCollectionUITests/Pods-PianoCollectionUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		035649117765E899A662B306 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PianoCollection/Pods-PianoCollection-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0AFBBA12774CE0B14947356A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1E11E69ED81C62AD8FBD8B67 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PianoCollectionUITests/Pods-PianoCollectionUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E5BCFEBE26E5E23A487DA23 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		70376F342AE7CFFCBB4ECC36 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C1D1612E381451972E09183B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PianoCollection/Pods-PianoCollection-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5DB13BCD713B339E116CD97 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PianoCollectionTests/Pods-PianoCollectionTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F105D6D4860382CE65A4C3A6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PianoCollectionTests/Pods-PianoCollectionTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C08C56901E4F55B7000A539C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C08C569C1E4F55B7000A539C /* SecondViewController.swift in Sources */,
+				C0C5A47A1E54ACB0007062B1 /* FMDatabasePool.m in Sources */,
 				C08C56981E4F55B7000A539C /* AppDelegate.swift in Sources */,
+				C0C5A47C1E54ACB0007062B1 /* FMDatabaseQueue.m in Sources */,
+				C0C5A4811E54B273007062B1 /* DBManager.swift in Sources */,
 				C08C569A1E4F55B7000A539C /* FirstViewController.swift in Sources */,
+				C0C5A4761E54ACB0007062B1 /* FMDatabase.m in Sources */,
+				C0C5A47E1E54ACB0007062B1 /* FMResultSet.m in Sources */,
+				C0C5A4781E54ACB0007062B1 /* FMDatabaseAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,7 +540,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0C5A47F1E54ACB0007062B1 /* FMResultSet.m in Sources */,
+				C0C5A47D1E54ACB0007062B1 /* FMDatabaseQueue.m in Sources */,
 				C08C56AF1E4F55B7000A539C /* PianoCollectionTests.swift in Sources */,
+				C0C5A47B1E54ACB0007062B1 /* FMDatabasePool.m in Sources */,
+				C0C5A4771E54ACB0007062B1 /* FMDatabase.m in Sources */,
+				C0C5A4791E54ACB0007062B1 /* FMDatabaseAdditions.m in Sources */,
+				C0C5A4821E54B273007062B1 /* DBManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,42 +686,53 @@
 		};
 		C08C56BF1E4F55B7000A539C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D89031ABDCCE3E0A2B5DCCB /* Pods-PianoCollection.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = X77M95VSB8;
 				INFOPLIST_FILE = PianoCollection/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = BY.PianoCollection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PianoCollection/FMDB/PianoCollection-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		C08C56C01E4F55B7000A539C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49D7940C293A7A0623F6D909 /* Pods-PianoCollection.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = X77M95VSB8;
 				INFOPLIST_FILE = PianoCollection/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = BY.PianoCollection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PianoCollection/FMDB/PianoCollection-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		C08C56C21E4F55B7000A539C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B895F0A35D50CA7F4340911 /* Pods-PianoCollectionTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = X77M95VSB8;
 				INFOPLIST_FILE = PianoCollectionTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = BY.PianoCollectionTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PianoCollection/FMDB/PianoCollectionTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PianoCollection.app/PianoCollection";
 			};
@@ -476,14 +740,17 @@
 		};
 		C08C56C31E4F55B7000A539C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92D8AAA54A4B836779231DB2 /* Pods-PianoCollectionTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = X77M95VSB8;
 				INFOPLIST_FILE = PianoCollectionTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = BY.PianoCollectionTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PianoCollection/FMDB/PianoCollectionTests-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PianoCollection.app/PianoCollection";
 			};
@@ -491,6 +758,7 @@
 		};
 		C08C56C51E4F55B7000A539C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38A9F043D0BA054294DB9DD4 /* Pods-PianoCollectionUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = X77M95VSB8;
@@ -505,6 +773,7 @@
 		};
 		C08C56C61E4F55B7000A539C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AD3ABC9F79C87FC8DF211AC /* Pods-PianoCollectionUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = X77M95VSB8;
@@ -536,6 +805,7 @@
 				C08C56C01E4F55B7000A539C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C08C56C11E4F55B7000A539C /* Build configuration list for PBXNativeTarget "PianoCollectionTests" */ = {
 			isa = XCConfigurationList;
@@ -544,6 +814,7 @@
 				C08C56C31E4F55B7000A539C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C08C56C41E4F55B7000A539C /* Build configuration list for PBXNativeTarget "PianoCollectionUITests" */ = {
 			isa = XCConfigurationList;
@@ -552,6 +823,7 @@
 				C08C56C61E4F55B7000A539C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

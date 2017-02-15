@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class FirstViewController: UIViewController,UITableViewDataSource {
 
     @IBOutlet weak var containView: UIView!
@@ -42,7 +43,7 @@ class FirstViewController: UIViewController,UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellID = "pianocellid"
         
-        var cell = tableView.dequeueReusableCell(withIdentifier: cellID)
+        var cell:UITableViewCell? = tableView.dequeueReusableCell(withIdentifier: cellID)
         
         if cell == nil {
             cell = UITableViewCell.init(style: UITableViewCellStyle.default, reuseIdentifier: cellID)
