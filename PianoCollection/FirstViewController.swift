@@ -7,27 +7,37 @@
 //
 
 import UIKit
+import CoreData
 
 
 class FirstViewController: UIViewController,UITableViewDataSource {
 
     @IBOutlet weak var containView: UIView!
     @IBOutlet weak var tableView: UITableView!
+    var pianoArray:[AnyObject] = []
     
     var pianoName:String {
         get {
            return "piano"
         }
     }
-//    let fonts: Array <String> = []
-    lazy var fontnames:[String] = {
-       return UIFont.familyNames
-    }()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let app = UIApplication.shared.delegate as! AppDelegate
+        let context = app.persistentContainer.viewContext
+    
+        let tableName = "JapanUsedPiano_copy"
+//        let tableName = "Pianos"
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: tableName)
+        do {
+            pianoArray = try context.fetch(request)
+        } catch let error as NSError {
+            print("database search error,\(error)")
+        }
+        
         
         containView.backgroundColor = UIColor.gray
         tableView.dataSource = self
@@ -58,14 +68,17 @@ class FirstViewController: UIViewController,UITableViewDataSource {
         if cell == nil {
             cell = UITableViewCell.init(style: UITableViewCellStyle.default, reuseIdentifier: cellID)
         }
+        let piaon = pianoArray[indexPath.row]
+        cell?.textLabel?.text = piaon.value(forKey: "model") as? String
+        cell?.detailTextLabel?.text = piaon.value(forKey: "logo") as? String
         
-        cell?.textLabel?.text = self.fontnames[indexPath.row]
         
         return cell!
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.fontnames.count
+//        return self.fontnames.count
+        return pianoArray.count
     }
     
 

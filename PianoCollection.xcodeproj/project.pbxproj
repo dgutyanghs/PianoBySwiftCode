@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		082E7EAD1E6FE77500C45EAC /* AYNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082E7EAC1E6FE77500C45EAC /* AYNavigationViewController.swift */; };
+		08E6F3771E710A250057FB5F /* PianoCollection.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 08E6F3751E710A250057FB5F /* PianoCollection.xcdatamodeld */; };
+		08E6F3781E710A250057FB5F /* PianoCollection.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 08E6F3751E710A250057FB5F /* PianoCollection.xcdatamodeld */; };
+		0C29AC090464B032A4ED3389 /* Pods_PianoCollection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD77B454EF09EC2D3ED3774B /* Pods_PianoCollection.framework */; };
+		88B09E7D75D835C318DE8FBC /* Pods_PianoCollectionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F316EB41545CCB872703017 /* Pods_PianoCollectionTests.framework */; };
 		C08C56981E4F55B7000A539C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08C56971E4F55B7000A539C /* AppDelegate.swift */; };
 		C08C569A1E4F55B7000A539C /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08C56991E4F55B7000A539C /* FirstViewController.swift */; };
 		C08C569C1E4F55B7000A539C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08C569B1E4F55B7000A539C /* SecondViewController.swift */; };
@@ -33,6 +37,7 @@
 		C0C5A4811E54B273007062B1 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C5A4801E54B273007062B1 /* DBManager.swift */; };
 		C0C5A4821E54B273007062B1 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C5A4801E54B273007062B1 /* DBManager.swift */; };
 		C0C5A4841E54B35E007062B1 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C0C5A4831E54B35E007062B1 /* libsqlite3.tbd */; };
+		F0E6146B9CD4250AF3BCA26C /* Pods_PianoCollectionUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B43DD5F89DF1CBCE399F55C /* Pods_PianoCollectionUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +59,16 @@
 
 /* Begin PBXFileReference section */
 		082E7EAC1E6FE77500C45EAC /* AYNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYNavigationViewController.swift; sourceTree = "<group>"; };
+		08E6F3761E710A250057FB5F /* PianoCollection.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PianoCollection.xcdatamodel; sourceTree = "<group>"; };
+		43D0188116BD79DC022A16FF /* Pods-PianoCollection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PianoCollection.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PianoCollection/Pods-PianoCollection.debug.xcconfig"; sourceTree = "<group>"; };
+		5635E77EC09702B0B4C7272A /* Pods-PianoCollectionUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PianoCollectionUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PianoCollectionUITests/Pods-PianoCollectionUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6C40512D150BAF1C3AD2B217 /* Pods-PianoCollection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PianoCollection.release.xcconfig"; path = "Pods/Target Support Files/Pods-PianoCollection/Pods-PianoCollection.release.xcconfig"; sourceTree = "<group>"; };
+		782F118D8707D52BA55B41FE /* Pods-PianoCollectionUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PianoCollectionUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PianoCollectionUITests/Pods-PianoCollectionUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7F316EB41545CCB872703017 /* Pods_PianoCollectionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PianoCollectionTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8740A8B0AD27E66C08CF0F3A /* Pods-PianoCollectionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PianoCollectionTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PianoCollectionTests/Pods-PianoCollectionTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8B43DD5F89DF1CBCE399F55C /* Pods_PianoCollectionUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PianoCollectionUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8BE678C36BA07CD5FECCA72 /* Pods-PianoCollectionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PianoCollectionTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PianoCollectionTests/Pods-PianoCollectionTests.release.xcconfig"; sourceTree = "<group>"; };
+		BD77B454EF09EC2D3ED3774B /* Pods_PianoCollection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PianoCollection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C08C56941E4F55B7000A539C /* PianoCollection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PianoCollection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C08C56971E4F55B7000A539C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C08C56991E4F55B7000A539C /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -88,7 +103,6 @@
 		C0C5A4751E54ACB0007062B1 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
 		C0C5A4801E54B273007062B1 /* DBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
 		C0C5A4831E54B35E007062B1 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
-		F98C716FA75D27C77B7E5B6A /* Pods_PianoCollectionUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PianoCollectionUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +111,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0C5A4841E54B35E007062B1 /* libsqlite3.tbd in Frameworks */,
-				45BA0D80E4BA7381E61BBEB4 /* Pods_PianoCollection.framework in Frameworks */,
+				0C29AC090464B032A4ED3389 /* Pods_PianoCollection.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,7 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70419845F685AADD4BF14BB0 /* Pods_PianoCollectionTests.framework in Frameworks */,
+				88B09E7D75D835C318DE8FBC /* Pods_PianoCollectionTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,7 +127,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90DFE922C4058903179D469C /* Pods_PianoCollectionUITests.framework in Frameworks */,
+				F0E6146B9CD4250AF3BCA26C /* Pods_PianoCollectionUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,9 +138,9 @@
 			isa = PBXGroup;
 			children = (
 				C0C5A4831E54B35E007062B1 /* libsqlite3.tbd */,
-				5C7C4A05E9BB009BDFB28E9A /* Pods_PianoCollection.framework */,
-				75859AECE25EB837E9F81354 /* Pods_PianoCollectionTests.framework */,
-				F98C716FA75D27C77B7E5B6A /* Pods_PianoCollectionUITests.framework */,
+				BD77B454EF09EC2D3ED3774B /* Pods_PianoCollection.framework */,
+				7F316EB41545CCB872703017 /* Pods_PianoCollectionTests.framework */,
+				8B43DD5F89DF1CBCE399F55C /* Pods_PianoCollectionUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -138,8 +152,8 @@
 				C08C56AD1E4F55B7000A539C /* PianoCollectionTests */,
 				C08C56B81E4F55B7000A539C /* PianoCollectionUITests */,
 				C08C56951E4F55B7000A539C /* Products */,
-				E71D452956A0666B926EC0AF /* Pods */,
 				6AA9EFE5D769615E83EB8F87 /* Frameworks */,
+				E59973B62C8890A6984006B4 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -171,6 +185,7 @@
 				C08C56CD1E4F58C4000A539C /* AlexPianoDataBase.sqlite */,
 				C08C56C71E4F56EF000A539C /* Default-568h@2x.png */,
 				C08C56CF1E4F5EB8000A539C /* MyPlayground.playground */,
+				08E6F3751E710A250057FB5F /* PianoCollection.xcdatamodeld */,
 			);
 			path = PianoCollection;
 			sourceTree = "<group>";
@@ -213,15 +228,15 @@
 			path = FMDB;
 			sourceTree = "<group>";
 		};
-		E71D452956A0666B926EC0AF /* Pods */ = {
+		E59973B62C8890A6984006B4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0D89031ABDCCE3E0A2B5DCCB /* Pods-PianoCollection.debug.xcconfig */,
-				49D7940C293A7A0623F6D909 /* Pods-PianoCollection.release.xcconfig */,
-				4B895F0A35D50CA7F4340911 /* Pods-PianoCollectionTests.debug.xcconfig */,
-				92D8AAA54A4B836779231DB2 /* Pods-PianoCollectionTests.release.xcconfig */,
-				38A9F043D0BA054294DB9DD4 /* Pods-PianoCollectionUITests.debug.xcconfig */,
-				8AD3ABC9F79C87FC8DF211AC /* Pods-PianoCollectionUITests.release.xcconfig */,
+				43D0188116BD79DC022A16FF /* Pods-PianoCollection.debug.xcconfig */,
+				6C40512D150BAF1C3AD2B217 /* Pods-PianoCollection.release.xcconfig */,
+				8740A8B0AD27E66C08CF0F3A /* Pods-PianoCollectionTests.debug.xcconfig */,
+				A8BE678C36BA07CD5FECCA72 /* Pods-PianoCollectionTests.release.xcconfig */,
+				5635E77EC09702B0B4C7272A /* Pods-PianoCollectionUITests.debug.xcconfig */,
+				782F118D8707D52BA55B41FE /* Pods-PianoCollectionUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -518,6 +533,7 @@
 			files = (
 				082E7EAD1E6FE77500C45EAC /* AYNavigationViewController.swift in Sources */,
 				C08C569C1E4F55B7000A539C /* SecondViewController.swift in Sources */,
+				08E6F3771E710A250057FB5F /* PianoCollection.xcdatamodeld in Sources */,
 				C0C5A47A1E54ACB0007062B1 /* FMDatabasePool.m in Sources */,
 				C08C56981E4F55B7000A539C /* AppDelegate.swift in Sources */,
 				C0C5A47C1E54ACB0007062B1 /* FMDatabaseQueue.m in Sources */,
@@ -537,6 +553,7 @@
 				C0C5A47D1E54ACB0007062B1 /* FMDatabaseQueue.m in Sources */,
 				C08C56AF1E4F55B7000A539C /* PianoCollectionTests.swift in Sources */,
 				C0C5A47B1E54ACB0007062B1 /* FMDatabasePool.m in Sources */,
+				08E6F3781E710A250057FB5F /* PianoCollection.xcdatamodeld in Sources */,
 				C0C5A4771E54ACB0007062B1 /* FMDatabase.m in Sources */,
 				C0C5A4791E54ACB0007062B1 /* FMDatabaseAdditions.m in Sources */,
 				C0C5A4821E54B273007062B1 /* DBManager.swift in Sources */,
@@ -679,13 +696,13 @@
 		};
 		C08C56BF1E4F55B7000A539C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0D89031ABDCCE3E0A2B5DCCB /* Pods-PianoCollection.debug.xcconfig */;
+			baseConfigurationReference = 43D0188116BD79DC022A16FF /* Pods-PianoCollection.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = X77M95VSB8;
 				INFOPLIST_FILE = PianoCollection/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = BY.PianoCollection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -697,13 +714,13 @@
 		};
 		C08C56C01E4F55B7000A539C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 49D7940C293A7A0623F6D909 /* Pods-PianoCollection.release.xcconfig */;
+			baseConfigurationReference = 6C40512D150BAF1C3AD2B217 /* Pods-PianoCollection.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = X77M95VSB8;
 				INFOPLIST_FILE = PianoCollection/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = BY.PianoCollection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -714,7 +731,7 @@
 		};
 		C08C56C21E4F55B7000A539C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4B895F0A35D50CA7F4340911 /* Pods-PianoCollectionTests.debug.xcconfig */;
+			baseConfigurationReference = 8740A8B0AD27E66C08CF0F3A /* Pods-PianoCollectionTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -733,7 +750,7 @@
 		};
 		C08C56C31E4F55B7000A539C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 92D8AAA54A4B836779231DB2 /* Pods-PianoCollectionTests.release.xcconfig */;
+			baseConfigurationReference = A8BE678C36BA07CD5FECCA72 /* Pods-PianoCollectionTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -751,7 +768,7 @@
 		};
 		C08C56C51E4F55B7000A539C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 38A9F043D0BA054294DB9DD4 /* Pods-PianoCollectionUITests.debug.xcconfig */;
+			baseConfigurationReference = 5635E77EC09702B0B4C7272A /* Pods-PianoCollectionUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = X77M95VSB8;
@@ -766,7 +783,7 @@
 		};
 		C08C56C61E4F55B7000A539C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8AD3ABC9F79C87FC8DF211AC /* Pods-PianoCollectionUITests.release.xcconfig */;
+			baseConfigurationReference = 782F118D8707D52BA55B41FE /* Pods-PianoCollectionUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = X77M95VSB8;
@@ -819,6 +836,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		08E6F3751E710A250057FB5F /* PianoCollection.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				08E6F3761E710A250057FB5F /* PianoCollection.xcdatamodel */,
+			);
+			currentVersion = 08E6F3761E710A250057FB5F /* PianoCollection.xcdatamodel */;
+			path = PianoCollection.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C08C568C1E4F55B7000A539C /* Project object */;
 }
