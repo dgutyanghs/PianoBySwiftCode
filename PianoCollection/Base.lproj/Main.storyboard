@@ -26,34 +26,42 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jDt-zw-7XE">
-                                <rect key="frame" x="0.0" y="179" width="320" height="340"/>
+                                <rect key="frame" x="0.0" y="215" width="320" height="304"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="340" id="ybo-K1-O9x"/>
+                                    <constraint firstAttribute="height" constant="304" id="kFg-Pv-CV8"/>
                                 </constraints>
                             </tableView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Tp2-tI-W1g">
+                                <rect key="frame" x="0.0" y="171" width="320" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="raf-tB-fQp" secondAttribute="trailing" id="81g-yQ-I3D"/>
-                            <constraint firstItem="jDt-zw-7XE" firstAttribute="bottom" secondItem="4ug-Mw-9AY" secondAttribute="top" id="9ev-mX-HPM"/>
-                            <constraint firstItem="raf-tB-fQp" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" id="PWu-Fv-Ns9"/>
-                            <constraint firstItem="jDt-zw-7XE" firstAttribute="top" secondItem="raf-tB-fQp" secondAttribute="bottom" constant="8" symbolic="YES" id="b4u-qX-kKH"/>
-                            <constraint firstItem="raf-tB-fQp" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="cjs-H6-jGA"/>
-                            <constraint firstItem="raf-tB-fQp" firstAttribute="leading" secondItem="jDt-zw-7XE" secondAttribute="leading" id="fvX-MC-hUa"/>
-                            <constraint firstItem="raf-tB-fQp" firstAttribute="trailing" secondItem="jDt-zw-7XE" secondAttribute="trailing" id="uSu-bN-RDQ"/>
+                            <constraint firstAttribute="trailing" secondItem="raf-tB-fQp" secondAttribute="trailing" id="DTJ-uF-99d"/>
+                            <constraint firstItem="raf-tB-fQp" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="G1g-mx-D0v"/>
+                            <constraint firstItem="jDt-zw-7XE" firstAttribute="bottom" secondItem="4ug-Mw-9AY" secondAttribute="top" id="XOZ-Ro-gTH"/>
+                            <constraint firstItem="Tp2-tI-W1g" firstAttribute="leading" secondItem="jDt-zw-7XE" secondAttribute="leading" id="aGM-66-5Hh"/>
+                            <constraint firstItem="Tp2-tI-W1g" firstAttribute="top" secondItem="raf-tB-fQp" secondAttribute="bottom" id="bzQ-R7-JKu"/>
+                            <constraint firstItem="Tp2-tI-W1g" firstAttribute="trailing" secondItem="jDt-zw-7XE" secondAttribute="trailing" id="eEW-Tz-3Jr"/>
+                            <constraint firstItem="jDt-zw-7XE" firstAttribute="top" secondItem="Tp2-tI-W1g" secondAttribute="bottom" id="igY-1X-P98"/>
+                            <constraint firstItem="raf-tB-fQp" firstAttribute="trailing" secondItem="Tp2-tI-W1g" secondAttribute="trailing" id="q6b-2m-keH"/>
+                            <constraint firstItem="raf-tB-fQp" firstAttribute="leading" secondItem="Tp2-tI-W1g" secondAttribute="leading" id="qlH-tp-JhZ"/>
+                            <constraint firstItem="raf-tB-fQp" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" id="txr-KN-rgg"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="钢琴" image="first" id="acW-dT-cKf"/>
                     <navigationItem key="navigationItem" id="hQs-jK-UgK"/>
                     <connections>
                         <outlet property="containView" destination="raf-tB-fQp" id="TmL-dd-KcT"/>
+                        <outlet property="searchBar" destination="Tp2-tI-W1g" id="NdB-Iw-6CT"/>
                         <outlet property="tableView" destination="jDt-zw-7XE" id="dEB-Zp-wQZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1586" y="-343"/>
+            <point key="canvasLocation" x="1584.375" y="-343.3098591549296"/>
         </scene>
         <!--钢琴-->
         <scene sceneID="ImH-ZH-dJX">

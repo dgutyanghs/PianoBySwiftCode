@@ -9,10 +9,11 @@
 import UIKit
 
 
-class FirstViewController: UIViewController,UITableViewDataSource {
+class FirstViewController: UIViewController,UITableViewDataSource,UITableViewDelegate,UISearchBarDelegate {
 
     @IBOutlet weak var containView: UIView!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var searchBar: UISearchBar!
     var pianoArray:[PianoDataModel] = []
     var pianoLogoArray:[String] = []
     
@@ -28,11 +29,11 @@ class FirstViewController: UIViewController,UITableViewDataSource {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.loadDatabase()
+        
         containView.backgroundColor = UIColor.gray
         tableView.dataSource = self
-        
-        
-        
+        tableView.delegate = self
+        searchBar.delegate = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
