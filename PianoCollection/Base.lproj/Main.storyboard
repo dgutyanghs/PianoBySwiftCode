@@ -32,7 +32,7 @@
                                     <constraint firstAttribute="height" constant="304" id="kFg-Pv-CV8"/>
                                 </constraints>
                             </tableView>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Tp2-tI-W1g">
+                            <searchBar contentMode="redraw" placeholder="请输入钢琴型号或品牌" translatesAutoresizingMaskIntoConstraints="NO" id="Tp2-tI-W1g">
                                 <rect key="frame" x="0.0" y="171" width="320" height="44"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
