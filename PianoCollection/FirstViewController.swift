@@ -14,8 +14,10 @@ class FirstViewController: UIViewController,UITableViewDataSource,UITableViewDel
     @IBOutlet weak var containView: UIView!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
-    var pianoArray:[PianoDataModel] = []
+    var pianoArray = [Array<PianoDataModel>]()
     var pianoLogoArray:[String] = []
+    var selectIndexTitleShow:Bool = true
+    
     
     
     var pianoName:String {
@@ -58,9 +60,9 @@ class FirstViewController: UIViewController,UITableViewDataSource,UITableViewDel
         var cell:UITableViewCell? = tableView.dequeueReusableCell(withIdentifier: cellID)
         
         if cell == nil {
-            cell = UITableViewCell.init(style: UITableViewCellStyle.default, reuseIdentifier: cellID)
+            cell = UITableViewCell.init(style: UITableViewCellStyle.value1, reuseIdentifier: cellID)
         }
-        let piano = pianoArray[indexPath.row]
+        let piano = pianoArray[indexPath.section][indexPath.row]
         cell?.textLabel?.text = piano.model
         cell?.detailTextLabel?.text = piano.logo
         
@@ -68,72 +70,102 @@ class FirstViewController: UIViewController,UITableViewDataSource,UITableViewDel
         return cell!
     }
     
+    func sectionIndexTitles(for tableView: UITableView) -> [String]? {
+        if selectIndexTitleShow {
+            var logoHeaders = [String]()
+            for name in pianoLogoArray {
+                let index = name.index(name.startIndex, offsetBy: 1)
+                
+                let firstLetter:String = name.substring(to: index)
+                logoHeaders.append(firstLetter)
+            }
+            
+            return logoHeaders
+        }else {
+            return nil
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        var headTitle:String?
+        
+        if pianoArray.count <= 1 {
+            headTitle = "查找结果 :(\(pianoArray[section].count) 个型号）"
+        }else {
+            headTitle = pianoLogoArray[section]
+            headTitle = headTitle?.appendingFormat(" (%lu 个型号)", pianoArray[section].count)
+        }
+       
+        return headTitle
+    }
+    
+    func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
+        if pianoArray[section].count == 0 {
+            return nil
+        }
+        
+        var footerString:String? = nil
+        
+        if pianoArray.count >= 1 {
+            let piano  = pianoArray[section][0]
+            footerString = piano.company
+        }
+        
+        return footerString
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 60.0
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return pianoArray.count
+         return pianoArray[section].count
         
     }
     
-    func loadDatabase() -> Void {
-        
-        let fileURLPath = Bundle.main.path(forResource: "AlexPianoDataBase", ofType: "sqlite")
-        guard let database  = FMDatabase(path: fileURLPath)
-            else {
-                print("unable to create a databse")
-                return
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return pianoArray.count
+    }
+    
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if scrollView.isEqual(tableView) {
+            searchBar.resignFirstResponder()
         }
-        
-        guard database.open() else {
-            print("unable to open data base")
-            return
-        }
-        // get all Piano's logo
-        do {
-                let rs = try database.executeQuery("select DISTINCT logo  from JapanUsedPiano_copy order by logo asc;", values: nil)
-            
-                while rs.next() {
-                    let logo = rs.string(forColumn: "logo")
-                    pianoLogoArray.append(logo!)
-                }
-            
-            } catch let error as NSError {
-                print("database logo error:\(error.localizedDescription)")
-            }
-        
-        // get all piano's model
-        do {
-            for logo in pianoLogoArray {
-                let sql = "select * from JapanUsedPiano_copy where logo = '\(logo)';"
-                let rs  = try database.executeQuery(sql, values: nil)
-                
-                while rs.next() {
-                    let id          = rs.int(forColumn: "id")
-                    let company     = rs.string(forColumn: "company")
-                    let logo        = rs.string(forColumn: "logo")
-                    let model       = rs.string(forColumn: "model")
-                    let hight       = rs.string(forColumn: "hight")
-                    let width       = rs.string(forColumn: "width")
-                    let length      = rs.string(forColumn: "length")
-                    let height      = rs.string(forColumn: "height")
-                    let since       = rs.string(forColumn: "since")
-                    let end         = rs.string(forColumn: "end")
-                    let price       = rs.string(forColumn: "price")
-                    let kind        = rs.string(forColumn: "kind")
-                    let color       = rs.string(forColumn: "color")
-                    let selection   = rs.string(forColumn: "selection")
-                    let remarks     = rs.string(forColumn: "remarks")
-                    
-                    
-                    let pianoModel = PianoDataModel(id: Int(id), company: company, logo: logo, model: model, hight: hight, width: width, length: length, height: height, since: since, end: end, price: price, kind: kind, color: color, selection: selection, remarks: remarks)
-                    
-                    pianoArray.append(pianoModel)
-                }
-            }
-            
-        } catch let error as NSError {
-            print("database query piano failed:\(error.localizedDescription)")
-        }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
     }
+    
+    
+    func loadDatabase() -> Void {
+         pianoLogoArray = PianoDataModel.loadAllPianoLogo()
+         pianoArray = PianoDataModel.loadAllPianos()
+    }
+    
+    
+    /// UISearchBarDelegate
+    ///
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder();
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        pianoArray.removeAll(keepingCapacity: true)
+        if searchText == "" {
+            pianoArray = PianoDataModel.loadAllPianos()
+            selectIndexTitleShow = true
+        }else {
+            let queryPiano = PianoDataModel.query(text: searchText)
+            pianoArray.removeAll(keepingCapacity:true)
+            pianoArray.append(queryPiano)
+            selectIndexTitleShow = false
+        }
+        
+        tableView.reloadData()
+    }
+    
     
 
 }
