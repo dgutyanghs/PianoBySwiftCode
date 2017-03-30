@@ -7,6 +7,7 @@ target 'PianoCollection' do
   inherit! :search_paths
   #pod 'FMDB'
   pod 'Alamofire', '~>4.3'
+  pod 'SwiftKVC'
 
   # Pods for PianoCollection
 

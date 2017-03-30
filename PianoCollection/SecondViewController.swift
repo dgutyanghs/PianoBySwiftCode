@@ -17,10 +17,27 @@ class SecondViewController: UIViewController, WKNavigationDelegate  {
         let webView = WKWebView.init(frame: view.frame)
         view .addSubview(webView)
         webView.navigationDelegate = self
-        if let url = URL.init(string: "https://www.apple.com") {
-            let request = URLRequest.init(url: url)
+        if let url = URL.init(string: "https://120.25.207.78/videos/demo.mp4") {
+//        if let url = URL.init(string: "https://media.w3.org/2010/05/sintel/trailer.mp4") {
+//            let request = URLRequest.init(url: url)
+            let request = URLRequest.init(url: url, cachePolicy: URLRequest.CachePolicy.useProtocolCachePolicy, timeoutInterval:10)
+            
             webView.load(request)
         }
+    }
+    
+    func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
+        print("start to load urlrequest")
+    }
+    
+    func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
+        print("recevice data")
+    }
+    
+    func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
+//        if error != nil {
+           print("webview load error value:\(error.localizedDescription)")
+//        }
     }
 
     override func didReceiveMemoryWarning() {

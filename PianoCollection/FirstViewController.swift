@@ -66,7 +66,6 @@ class FirstViewController: UIViewController,UITableViewDataSource,UITableViewDel
         cell?.textLabel?.text = piano.model
         cell?.detailTextLabel?.text = piano.logo
         
-        
         return cell!
     }
     
@@ -135,12 +134,14 @@ class FirstViewController: UIViewController,UITableViewDataSource,UITableViewDel
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        let detailVc = PianoDetailTableViewController(style: UITableViewStyle.plain)
+        detailVc.piano = pianoArray[indexPath.section][indexPath.row]
+        navigationController?.pushViewController(detailVc, animated: true)
     }
     
     
     func loadDatabase() -> Void {
-         pianoLogoArray = PianoDataModel.loadAllPianoLogo()
+         pianoLogoArray = PianoDataModel.loadLogos()
          pianoArray = PianoDataModel.loadAllPianos()
     }
     

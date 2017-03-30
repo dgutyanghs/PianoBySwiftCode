@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0805052D1E8CE63500CB4EF9 /* PianoDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0805052C1E8CE63500CB4EF9 /* PianoDetailTableViewController.swift */; };
+		0805052F1E8CF8A400CB4EF9 /* piano_detail.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0805052E1E8CF8A400CB4EF9 /* piano_detail.plist */; };
+		080505321E8D06DE00CB4EF9 /* PianoDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080505311E8D06DE00CB4EF9 /* PianoDetailTableViewCell.swift */; };
 		081FC2CC1E7240CC0086882B /* PianoDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081FC2CB1E7240CC0086882B /* PianoDataModel.swift */; };
 		081FC2CD1E7240CC0086882B /* PianoDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081FC2CB1E7240CC0086882B /* PianoDataModel.swift */; };
 		082E7EAD1E6FE77500C45EAC /* AYNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082E7EAC1E6FE77500C45EAC /* AYNavigationViewController.swift */; };
@@ -23,7 +26,6 @@
 		C08C56AF1E4F55B7000A539C /* PianoCollectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08C56AE1E4F55B7000A539C /* PianoCollectionTests.swift */; };
 		C08C56BA1E4F55B7000A539C /* PianoCollectionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08C56B91E4F55B7000A539C /* PianoCollectionUITests.swift */; };
 		C08C56C81E4F56EF000A539C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C08C56C71E4F56EF000A539C /* Default-568h@2x.png */; };
-		C08C56CA1E4F589E000A539C /* piano_detail.plist in Resources */ = {isa = PBXBuildFile; fileRef = C08C56C91E4F589E000A539C /* piano_detail.plist */; };
 		C08C56CC1E4F58B5000A539C /* Internet Widgits Pty Ltd.cer in Resources */ = {isa = PBXBuildFile; fileRef = C08C56CB1E4F58B5000A539C /* Internet Widgits Pty Ltd.cer */; };
 		C08C56CE1E4F58C4000A539C /* AlexPianoDataBase.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = C08C56CD1E4F58C4000A539C /* AlexPianoDataBase.sqlite */; };
 		C0C5A4761E54ACB0007062B1 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C5A46C1E54ACB0007062B1 /* FMDatabase.m */; };
@@ -58,6 +60,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0805052C1E8CE63500CB4EF9 /* PianoDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PianoDetailTableViewController.swift; sourceTree = "<group>"; };
+		0805052E1E8CF8A400CB4EF9 /* piano_detail.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = piano_detail.plist; sourceTree = "<group>"; };
+		080505311E8D06DE00CB4EF9 /* PianoDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PianoDetailTableViewCell.swift; sourceTree = "<group>"; };
 		081FC2CB1E7240CC0086882B /* PianoDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PianoDataModel.swift; sourceTree = "<group>"; };
 		082E7EAC1E6FE77500C45EAC /* AYNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AYNavigationViewController.swift; sourceTree = "<group>"; };
 		08EE18871E768199008189FB /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
@@ -85,7 +90,6 @@
 		C08C56B91E4F55B7000A539C /* PianoCollectionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoCollectionUITests.swift; sourceTree = "<group>"; };
 		C08C56BB1E4F55B7000A539C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C08C56C71E4F56EF000A539C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		C08C56C91E4F589E000A539C /* piano_detail.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = piano_detail.plist; sourceTree = "<group>"; };
 		C08C56CB1E4F58B5000A539C /* Internet Widgits Pty Ltd.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Internet Widgits Pty Ltd.cer"; sourceTree = "<group>"; };
 		C08C56CD1E4F58C4000A539C /* AlexPianoDataBase.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = AlexPianoDataBase.sqlite; sourceTree = "<group>"; };
 		C08C56CF1E4F5EB8000A539C /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
@@ -134,6 +138,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		080505301E8D06AD00CB4EF9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				080505311E8D06DE00CB4EF9 /* PianoDetailTableViewCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		08EE18861E768173008189FB /* extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -178,19 +190,21 @@
 		C08C56961E4F55B7000A539C /* PianoCollection */ = {
 			isa = PBXGroup;
 			children = (
+				080505301E8D06AD00CB4EF9 /* View */,
 				08EE18861E768173008189FB /* extension */,
 				C0C5A4531E54AC29007062B1 /* FMDB */,
 				C08C56971E4F55B7000A539C /* AppDelegate.swift */,
 				082E7EAC1E6FE77500C45EAC /* AYNavigationViewController.swift */,
 				C08C56991E4F55B7000A539C /* FirstViewController.swift */,
+				0805052C1E8CE63500CB4EF9 /* PianoDetailTableViewController.swift */,
 				C08C569B1E4F55B7000A539C /* SecondViewController.swift */,
 				081FC2CB1E7240CC0086882B /* PianoDataModel.swift */,
 				C08C569D1E4F55B7000A539C /* Main.storyboard */,
 				C08C56A01E4F55B7000A539C /* Assets.xcassets */,
 				C08C56A21E4F55B7000A539C /* LaunchScreen.storyboard */,
 				C08C56A51E4F55B7000A539C /* Info.plist */,
-				C08C56C91E4F589E000A539C /* piano_detail.plist */,
 				C08C56CB1E4F58B5000A539C /* Internet Widgits Pty Ltd.cer */,
+				0805052E1E8CF8A400CB4EF9 /* piano_detail.plist */,
 				C08C56CD1E4F58C4000A539C /* AlexPianoDataBase.sqlite */,
 				C08C56C71E4F56EF000A539C /* Default-568h@2x.png */,
 				C08C56CF1E4F5EB8000A539C /* MyPlayground.playground */,
@@ -375,7 +389,7 @@
 				C08C56A11E4F55B7000A539C /* Assets.xcassets in Resources */,
 				C08C56CC1E4F58B5000A539C /* Internet Widgits Pty Ltd.cer in Resources */,
 				C08C56CE1E4F58C4000A539C /* AlexPianoDataBase.sqlite in Resources */,
-				C08C56CA1E4F589E000A539C /* piano_detail.plist in Resources */,
+				0805052F1E8CF8A400CB4EF9 /* piano_detail.plist in Resources */,
 				C08C569F1E4F55B7000A539C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -543,8 +557,10 @@
 				C08C569C1E4F55B7000A539C /* SecondViewController.swift in Sources */,
 				08EE18881E768199008189FB /* UIViewExtension.swift in Sources */,
 				C0C5A47A1E54ACB0007062B1 /* FMDatabasePool.m in Sources */,
+				0805052D1E8CE63500CB4EF9 /* PianoDetailTableViewController.swift in Sources */,
 				C08C56981E4F55B7000A539C /* AppDelegate.swift in Sources */,
 				C0C5A47C1E54ACB0007062B1 /* FMDatabaseQueue.m in Sources */,
+				080505321E8D06DE00CB4EF9 /* PianoDetailTableViewCell.swift in Sources */,
 				C08C569A1E4F55B7000A539C /* FirstViewController.swift in Sources */,
 				C0C5A4761E54ACB0007062B1 /* FMDatabase.m in Sources */,
 				081FC2CC1E7240CC0086882B /* PianoDataModel.swift in Sources */,

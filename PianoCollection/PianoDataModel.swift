@@ -8,11 +8,12 @@
 
 import Foundation
 import UIKit
+import SwiftKVC
 
 private var pianoLogoArray:[String] = []
 private var pianos = [Array<PianoDataModel>]()
 
-struct PianoDataModel {
+struct PianoDataModel:Value {
     let  id :Int
     let  company:String?
     let  logo:String?
@@ -42,7 +43,7 @@ struct PianoDataModel {
     }()
     
 //    private var pianoLogoArray:[String] = []
-    static public func loadAllPianoLogo() -> [String] {
+    static public func loadLogos() -> [String] {
         
         guard (pianoDatabase?.open()) != nil
             else {
@@ -68,7 +69,7 @@ struct PianoDataModel {
     
     static func loadAllPianos() -> [Array<PianoDataModel>]  {
         if pianoLogoArray.count == 0 {
-            _ = loadAllPianoLogo()
+            _ = loadLogos()
         }
         
         // get all piano's model
@@ -116,7 +117,7 @@ struct PianoDataModel {
     
     static func getLogos() -> [String] {
         if pianoLogoArray.count == 0 {
-            _ =  loadAllPianoLogo()
+            _ =  loadLogos()
         }
         
         return pianoLogoArray;
@@ -158,7 +159,7 @@ struct PianoDataModel {
             print("database query piano failed:\(error.localizedDescription)")
         }
         
-        return queryResult;
+        return queryResult
     }
 }
 
